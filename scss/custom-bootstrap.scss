@@ -1,0 +1,77 @@
+@import './functions';
+@import './variables';
+
+
+
+$h7-font-size: $font-size-base*0.80;
+$h8-font-size: $font-size-base*0.60;
+$h9-font-size: $font-size-base*0.40;
+$h10-font-size: $font-size-base*0.20;
+
+$new-font-sizes:(
+    7:$h7-font-size,
+    8:$h8-font-size,
+    9:$h9-font-size,
+    10:$h10-font-size
+);
+
+$font-sizes:map-merge($map1:$font-sizes , $map2:$new-font-sizes );
+
+$new-border-widths: (
+  6: 6px,
+  7: 7px,
+  8: 8px,
+  9: 9px,
+  10: 10px
+);
+
+$border-widths:map-merge($map1:$border-widths , $map2:$new-border-widths );
+
+$grid-gutter-width:0.5rem;
+$card-bg:#212529;
+$card-color: cyan; 
+$card-border-radius: 20px;
+
+
+
+$new-theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       #00ffea,
+  "warning":    $warning,
+  "danger":     #ff0077,
+  "light":       #f3eeff,
+  "dark":       $dark,
+  'epicode-1': #5726c3,
+  'epicode-2': #8625a5,
+   'epicode-3': #cb2376
+);
+
+$theme-colors:map-merge($map1:$theme-colors , $map2:$new-theme-colors );
+
+
+$badge-border-radius:50rem;
+$btn-border-radius:50rem;
+$input-border-radius:50rem;
+
+
+$new-grid-breakpoints:(
+    3xl:1600px,
+    4xl:1800px
+);
+
+$new-container-max-widths:(
+    3xl:1520px,
+    4xl:1720px
+);
+
+$grid-breakpoints:map-merge($map1:$grid-breakpoints , $map2:$new-grid-breakpoints );
+$container-max-widths:map-merge($map1:$container-max-widths , $map2:$new-container-max-widths );
+
+
+
+
+
+
+@import './bootstrap.scss';
