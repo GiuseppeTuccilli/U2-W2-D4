@@ -25,6 +25,9 @@ $new-border-widths: (
   10: 10px
 );
 
+$btn-padding-y: 0.75rem;
+$btn-padding-x:  2.5rem;
+
 $border-widths:map-merge($map1:$border-widths , $map2:$new-border-widths );
 
 $grid-gutter-width:0.5rem;
